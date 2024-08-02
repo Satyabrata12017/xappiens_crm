@@ -119,11 +119,14 @@ app_license = "MIT"
 # Hook on document methods and events
 
 # doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
+# 	# "*": {
+# 	# 	"on_update": "method",
+# 	# 	"on_cancel": "method",
+# 	# 	"on_trash": "method"
+# 	# },
+#     "Lead":{
+#         "validate":"xappiens_crm.utils.update_lead_with_email"
+#     }
 # }
 
 # Scheduled Tasks
@@ -215,3 +218,14 @@ app_license = "MIT"
 # auth_hooks = [
 #	"xappiens_crm.auth.validate"
 # ]
+
+fixtures = [
+    {"dt": "Custom Field", "filters": [
+        [
+            "module", "in", [
+                    "Xappiens Crm"
+            ],
+            # "fieldname", "in", ["state"]
+        ]
+    ]}
+]
