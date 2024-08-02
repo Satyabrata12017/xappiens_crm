@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include xappiens_crm *.css
+recursive-include xappiens_crm *.csv
+recursive-include xappiens_crm *.html
+recursive-include xappiens_crm *.ico
+recursive-include xappiens_crm *.js
+recursive-include xappiens_crm *.json
+recursive-include xappiens_crm *.md
+recursive-include xappiens_crm *.png
+recursive-include xappiens_crm *.py
+recursive-include xappiens_crm *.svg
+recursive-include xappiens_crm *.txt
+recursive-exclude xappiens_crm *.pyc
