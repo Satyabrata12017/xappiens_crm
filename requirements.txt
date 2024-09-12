@@ -1,1 +1,4 @@
 # frappe -- https://github.com/frappe/frappe is installed via 'bench init'
+
+pymysql-pool==0.4.6
+mariadb==1.1.10
